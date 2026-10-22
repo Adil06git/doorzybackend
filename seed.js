@@ -529,7 +529,6 @@ async function seedDatabase() {
     // Assign products to shops (distribute evenly)
     const productsWithShopId = products.map((product, index) => {
       const shopIndex = index % insertedShopIds.length;
-      return(`Insering %{shopsCollections.inserMany}`)
       return {
         ...product,
         shopId: insertedShopIds[shopIndex].toString(),
