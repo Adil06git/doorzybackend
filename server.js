@@ -14,7 +14,7 @@ dotenv.config();
 const app = express();
 
 // ============ MONGODB CONNECTION ============
-const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/nearcart';
+const MONGODB_URI = process.env.MONGODB_URI || 'mongodb+srv://rasheedadil149_db_user:4lOiewRgetgtm482@cluster0.zeda5wo.mongodb.net/Doorzy?appName=cluster0';
 let db;
 let client;
 
